@@ -45,6 +45,23 @@ def existe_evaluacion_previa(user, tabla, idioma):
     }
     return evals_collection.find_one(query) is not None
 
+def validar_justificaciones(evaluacion_dict):
+    faltantes = []
+    for eval_key, data in evaluacion_dict.items():
+        try:
+            _, col_idx_str, campo = eval_key.rsplit("_", 2)
+            col_num = int(col_idx_str) + 1
+            base = f"Columna {col_num} - {campo}"
+        except Exception:
+            base = str(eval_key)
+
+        if data.get("correct") is False and not str(data.get("justif_correct", "")).strip():
+            faltantes.append(f"{base}: falta la justificacion de por que NO es correcto.")
+        if data.get("concise") is False and not str(data.get("justif_concise", "")).strip():
+            faltantes.append(f"{base}: falta la justificacion de por que NO es conciso.")
+
+    return faltantes
+
 # -----------------------------
 # Utilidades
 # -----------------------------
@@ -284,6 +301,13 @@ def render_tab(tab, entrada, prefix):
 
             # Si el usuario ya confirmo/cancelo en el dialogo, procesamos aqui (fuera del click del boton principal)
             if st.session_state[confirm_key] is True:
+                faltantes = validar_justificaciones(evaluacion)
+                if faltantes:
+                    st.error("Faltan justificaciones obligatorias. Completa los campos y vuelve a intentar.")
+                    st.write(faltantes)
+                    st.session_state[confirm_key] = None
+                    st.stop()
+
                 query = {"user": user, "tabla": tabla, "idioma": idioma_actual}
                 update_result = evals_collection.update_one(query, {"$set": doc}, upsert=True)
                 st.session_state[confirm_key] = None
@@ -296,6 +320,12 @@ def render_tab(tab, entrada, prefix):
                 st.session_state[confirm_key] = None
 
             if st.button(boton_texto, type="primary", key=f"{prefix}_enviar"):
+                faltantes = validar_justificaciones(evaluacion)
+                if faltantes:
+                    st.error("Faltan justificaciones obligatorias. Completa los campos y vuelve a intentar.")
+                    st.write(faltantes)
+                    st.stop()
+
                 if tiene_previa:
                     confirm_dialog(prefix)
                 else:
