@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>NACIONALITAT</schema:name>
+      <schema:description>Nacionalitat dels professors</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL</schema:name>
+      <schema:description>Total de professors per nacionalitat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>CATEDRÀTIC/A DE UNIVERSITAT</schema:name>
+      <schema:description>Nombre de catedràtics universitaris per nacionalitat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESSOR/A TITULAR UNIVERSITAT</schema:name>
+      <schema:description>Nombre de professors titulars universitaris per nacionalitat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESSOR/A PERMANENT LABORAL</schema:name>
+      <schema:description>Nombre de professors laborals permanents per nacionalitat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESSOR/A AJUDANT DOCTOR/A</schema:name>
+      <schema:description>Nombre de professors ajudants doctorals per nacionalitat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>AJUDANT LOU</schema:name>
+      <schema:description>Nombre d'ajudants LOU per nacionalitat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESSOR/A COL·LABORADOR/A</schema:name>
+      <schema:description>Nombre de professors col·laboradors per nacionalitat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESSOR/A ASSOCIAT/ADA</schema:name>
+      <schema:description>Nombre de professors associats per nacionalitat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESSOR/A VISITANT</schema:name>
+      <schema:description>Nombre de professors visitants per nacionalitat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>
