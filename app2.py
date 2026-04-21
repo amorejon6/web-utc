@@ -266,6 +266,18 @@ def render_tab(tab, entrada, prefix):
 
             boton_texto = "🔄 Actualizar Evaluación" if tiene_previa else "💾 Guardar Evaluación"
 
+            # Mensaje/animacion tras guardar o actualizar (se muestra en el rerun siguiente)
+            flash_key = f"{prefix}_flash"
+            flash = st.session_state.get(flash_key)
+            if flash == "saved":
+                st.success("¡Evaluacion guardada exitosamente!")
+                st.balloons()
+                st.session_state[flash_key] = None
+            elif flash == "updated":
+                st.success("¡Evaluacion actualizada!")
+                st.balloons()
+                st.session_state[flash_key] = None
+
             confirm_key = f"confirmar_{prefix}"
             if confirm_key not in st.session_state:
                 st.session_state[confirm_key] = None
@@ -274,15 +286,10 @@ def render_tab(tab, entrada, prefix):
             if st.session_state[confirm_key] is True:
                 query = {"user": user, "tabla": tabla, "idioma": idioma_actual}
                 update_result = evals_collection.update_one(query, {"$set": doc}, upsert=True)
-                if update_result.matched_count == 0 and update_result.upserted_id is not None:
-                    st.success("No existia un doc previo; se ha creado uno nuevo.")
-                elif update_result.matched_count == 1 and update_result.modified_count == 0:
-                    st.success("Actualizacion realizada (sin cambios detectables).")
-                else:
-                    st.success("¡Actualizada!")
-                st.balloons()
                 st.session_state[confirm_key] = None
                 st.session_state[key_previa] = True
+                st.session_state[flash_key] = "updated"
+                st.rerun()
 
             elif st.session_state[confirm_key] is False:
                 st.info("Actualizacion cancelada.")
@@ -294,9 +301,8 @@ def render_tab(tab, entrada, prefix):
                 else:
                     result = evals_collection.insert_one(doc)
                     if result.acknowledged and result.inserted_id:
-                        st.success("¡Evaluacion guardada exitosamente!")
-                        st.balloons()
                         st.session_state[key_previa] = True
+                        st.session_state[flash_key] = "saved"
                         st.rerun()
                     else:
                         st.error("Error al guardar nueva evaluacion.")
