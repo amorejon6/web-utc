@@ -650,7 +650,7 @@ with st.sidebar:
 
     with st.expander("🧩 tablas a evaluar"):
         for id_tabla, (t_es, _) in bilingue_tablas.items():
-            badge = "✅" if estado.get(id_tabla) else "⏳"
+            badge = "✅ (evaluada)" if estado.get(id_tabla) else "⏳ (no evaluada)"
             st.markdown(f"**{id_tabla}** {badge}")
             rdf_content = t_es["rdf_path"].read_text(encoding="utf-8")
             columnas = parse_dcat_regex(rdf_content)
@@ -678,7 +678,7 @@ with st.sidebar:
 tabs_main = st.tabs(["Tablas a evaluar"])
 with tabs_main[0]:
     def _fmt_tabla(tid: str) -> str:
-        return f"{'✅' if estado.get(tid) else '⏳'} {tid}"
+        return f"{tid} {'✅ (evaluada)' if estado.get(tid) else '⏳ (no evaluada)'}"
 
     id_tabla = st.selectbox("Tabla", ids, key="bilingue_tabla_activa", format_func=_fmt_tabla)
     entrada_es, entrada_va = bilingue_tablas[id_tabla]
