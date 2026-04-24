@@ -45,6 +45,32 @@ def existe_evaluacion_previa(user, tabla, idioma):
     }
     return evals_collection.find_one(query) is not None
 
+def estado_tablas_bilingue(user: str, tablas_ids: list[str]) -> dict[str, bool]:
+    """
+    Devuelve {id_tabla: True/False} indicando si la tabla está evaluada en ambos idiomas
+    (castellano y valenciano) para el usuario.
+    """
+    if not tablas_ids:
+        return {}
+
+    cursor = evals_collection.find(
+        {
+            "user": user,
+            "tabla": {"$in": tablas_ids},
+            "idioma": {"$in": ["castellano", "valenciano"]},
+        },
+        {"tabla": 1, "idioma": 1},
+    )
+
+    idiomas_por_tabla: dict[str, set[str]] = defaultdict(set)
+    for doc in cursor:
+        tabla = str(doc.get("tabla", ""))
+        idioma = str(doc.get("idioma", ""))
+        if tabla and idioma:
+            idiomas_por_tabla[tabla].add(idioma)
+
+    return {tid: idiomas_por_tabla.get(tid, set()) >= {"castellano", "valenciano"} for tid in tablas_ids}
+
 def validar_justificaciones(evaluacion_dict):
     faltantes = []
     for eval_key, data in evaluacion_dict.items():
@@ -67,8 +93,8 @@ def validar_justificaciones(evaluacion_dict):
 # -----------------------------
 
 @st.dialog("Confirmar actualización", width="medium")
-def confirm_dialog(prefix):
-    st.warning("🔄 Ya existe una evaluación para esta tabla/idioma.")
+def confirm_dialog(prefix, message=None):
+    st.warning(message or "🔄 Ya existe una evaluación para esta tabla/idioma.")
     st.info("Se sobrescribirá la anterior. ¿Continuar?")
     
     col1, col2 = st.columns([2, 2])
@@ -176,7 +202,7 @@ def render_tab(tab, entrada, prefix):
                 "📥 Descargar CSV",
                 df_csv.to_csv(index=False).encode("utf-8"),
                 file_name=csv_path.name,
-                key=f"download_{prefix}"
+                key=f"download_{prefix}_mono"
             )
 
         # estado
@@ -214,7 +240,7 @@ def render_tab(tab, entrada, prefix):
 
             with c1:
                 data["correct"] = st.checkbox(
-                    "✅ Correcto",
+                    "Correcto",
                     value=data["correct"],
                     key=f"{key}_c"
                 )
@@ -227,7 +253,7 @@ def render_tab(tab, entrada, prefix):
 
             with c2:
                 data["concise"] = st.checkbox(
-                    "🤏 Conciso",
+                    "Conciso",
                     value=data["concise"],
                     key=f"{key}_cc"
                 )
@@ -337,6 +363,251 @@ def render_tab(tab, entrada, prefix):
                     else:
                         st.error("Error al guardar nueva evaluacion.")
 
+def _ensure_eval_entry(storage_prefix: str, col_idx: int, campo: str):
+    if f"{storage_prefix}_eval" not in st.session_state:
+        st.session_state[f"{storage_prefix}_eval"] = {}
+
+    storage_key = f"{storage_prefix}_{col_idx}_{campo}"
+    if storage_key not in st.session_state[f"{storage_prefix}_eval"]:
+        st.session_state[f"{storage_prefix}_eval"][storage_key] = {
+            "correct": True,
+            "concise": True,
+            "justif_correct": "",
+            "justif_concise": "",
+        }
+    return storage_key, st.session_state[f"{storage_prefix}_eval"][storage_key]
+
+def _render_eval_field(storage_prefix: str, ui_prefix: str, col_idx: int, campo: str, valor: str, *, disabled: bool = False):
+    storage_key, data = _ensure_eval_entry(storage_prefix, col_idx, campo)
+    ui_key = f"{ui_prefix}_{col_idx}_{campo}"
+
+    st.markdown(f"### {campo.upper()}: {valor if str(valor).strip() else '—'}")
+    c1, c2 = st.columns(2)
+
+    with c1:
+        data["correct"] = st.checkbox(
+            "Correcto",
+            value=data["correct"],
+            key=f"{ui_key}_c",
+            disabled=disabled,
+        )
+        if not data["correct"]:
+            data["justif_correct"] = st.text_area(
+                "Justificación",
+                value=data["justif_correct"],
+                key=f"{ui_key}_jc",
+                disabled=disabled,
+            )
+
+    with c2:
+        data["concise"] = st.checkbox(
+            "Conciso",
+            value=data["concise"],
+            key=f"{ui_key}_cc",
+            disabled=disabled,
+        )
+        if not data["concise"]:
+            data["justif_concise"] = st.text_area(
+                "Justificación",
+                value=data["justif_concise"],
+                key=f"{ui_key}_jcc",
+                disabled=disabled,
+            )
+
+    st.session_state[f"{storage_prefix}_eval"][storage_key] = data
+
+def render_tab_bilingue(tab, entrada_es, entrada_va, id_tabla):
+    prefix_es = f"castellano_{id_tabla}"
+    prefix_va = f"valenciano_{id_tabla}"
+    prefix_bi = f"bilingue_{id_tabla}"
+    ui_es = f"{prefix_bi}_ui_es"
+    ui_va = f"{prefix_bi}_ui_va"
+
+    with tab:
+        rdf_content_es = entrada_es["rdf_path"].read_text(encoding="utf-8")
+        rdf_content_va = entrada_va["rdf_path"].read_text(encoding="utf-8")
+        columnas_es = parse_dcat_regex(rdf_content_es)
+        columnas_va = parse_dcat_regex(rdf_content_va)
+
+        total_columnas = max(len(columnas_es), len(columnas_va))
+
+        st.title(f"{id_tabla} (castellano + valenciano)")
+
+        # CSVs
+        csv_path_es = entrada_es.get("csv_path")
+        csv_path_va = entrada_va.get("csv_path")
+        dl1, dl2 = st.columns(2)
+        with dl1:
+            if csv_path_es and csv_path_es.exists():
+                sep = find_delimiter(csv_path_es)
+                df_csv = pd.read_csv(csv_path_es, sep=sep)
+                st.download_button(
+                    "📥 Descargar CSV (castellano)",
+                    df_csv.to_csv(index=False).encode("utf-8"),
+                    file_name=csv_path_es.name,
+                    key=f"download_{prefix_es}_bi",
+                )
+        with dl2:
+            if csv_path_va and csv_path_va.exists():
+                sep = find_delimiter(csv_path_va)
+                df_csv = pd.read_csv(csv_path_va, sep=sep)
+                st.download_button(
+                    "📥 Descargar CSV (valenciano)",
+                    df_csv.to_csv(index=False).encode("utf-8"),
+                    file_name=csv_path_va.name,
+                    key=f"download_{prefix_va}_bi",
+                )
+
+        # estado
+        if f"{prefix_bi}_col" not in st.session_state:
+            st.session_state[f"{prefix_bi}_col"] = 0
+        if f"{prefix_es}_eval" not in st.session_state:
+            st.session_state[f"{prefix_es}_eval"] = {}
+        if f"{prefix_va}_eval" not in st.session_state:
+            st.session_state[f"{prefix_va}_eval"] = {}
+
+        col_idx = st.session_state[f"{prefix_bi}_col"]
+
+        col_data_es = columnas_es[col_idx] if col_idx < len(columnas_es) else None
+        col_data_va = columnas_va[col_idx] if col_idx < len(columnas_va) else None
+
+        st.subheader(f"Columna {col_idx + 1}")
+
+        meta1, meta2 = st.columns(2)
+        with meta1:
+            st.caption("Castellano")
+            if col_data_es:
+                st.table(pd.DataFrame([col_data_es]))
+            else:
+                st.info("No existe esta columna en castellano.")
+        with meta2:
+            st.caption("Valenciano")
+            if col_data_va:
+                st.table(pd.DataFrame([col_data_va]))
+            else:
+                st.info("No existe esta columna en valenciano.")
+
+        st.markdown("---")
+
+        def render_campo(campo: str, valor_es: str, valor_va: str):
+            st.markdown(f"## {campo.upper()}")
+            c_es, c_va = st.columns(2)
+
+            with c_es:
+                _render_eval_field(prefix_es, ui_es, col_idx, campo, valor_es, disabled=col_data_es is None)
+
+            with c_va:
+                _render_eval_field(prefix_va, ui_va, col_idx, campo, valor_va, disabled=col_data_va is None)
+
+        render_campo(
+            "nombre",
+            col_data_es["nombre"] if col_data_es else "",
+            col_data_va["nombre"] if col_data_va else "",
+        )
+        render_campo(
+            "descripcion",
+            col_data_es["descripcion"] if col_data_es else "",
+            col_data_va["descripcion"] if col_data_va else "",
+        )
+        render_campo(
+            "tipo",
+            col_data_es["tipo"] if col_data_es else "",
+            col_data_va["tipo"] if col_data_va else "",
+        )
+
+        # navegación (abajo, con "siguiente" alineado a la derecha)
+        nav_left, nav_mid, nav_right = st.columns([1, 6, 1])
+        with nav_left:
+            if st.button("◀️ Anterior", disabled=col_idx == 0, key=f"{prefix_bi}_prev"):
+                st.session_state[f"{prefix_bi}_col"] = max(0, st.session_state[f"{prefix_bi}_col"] - 1)
+                st.rerun()
+        with nav_right:
+            if st.button("Siguiente ▶️", disabled=col_idx == total_columnas - 1, key=f"{prefix_bi}_next"):
+                st.session_state[f"{prefix_bi}_col"] = min(total_columnas - 1, st.session_state[f"{prefix_bi}_col"] + 1)
+                st.rerun()
+
+        if col_idx == total_columnas - 1:
+            st.markdown("---")
+
+            user = st.session_state.evaluador
+            tabla = id_tabla
+
+            tiene_previa_es = existe_evaluacion_previa(user, tabla, "castellano")
+            tiene_previa_va = existe_evaluacion_previa(user, tabla, "valenciano")
+            tiene_previa = tiene_previa_es or tiene_previa_va
+
+            eval_es = st.session_state[f"{prefix_es}_eval"].copy()
+            eval_va = st.session_state[f"{prefix_va}_eval"].copy()
+
+            doc_es = {
+                "tabla": tabla,
+                "idioma": "castellano",
+                "columnas": columnas_es,
+                "evaluacion": eval_es,
+                "timestamp": datetime.now().isoformat(),
+                "user": user,
+            }
+            doc_va = {
+                "tabla": tabla,
+                "idioma": "valenciano",
+                "columnas": columnas_va,
+                "evaluacion": eval_va,
+                "timestamp": datetime.now().isoformat(),
+                "user": user,
+            }
+
+            boton_texto = "🔄 Actualizar evaluación de ambos idiomas" if tiene_previa else "💾 Guardar evaluación de ambos idiomas"
+
+            flash_key = f"{prefix_bi}_flash"
+            flash = st.session_state.get(flash_key)
+            if flash == "saved":
+                st.success("¡Evaluaciones guardadas!")
+                st.balloons()
+                st.session_state[flash_key] = None
+            elif flash == "updated":
+                st.success("¡Evaluaciones actualizadas!")
+                st.balloons()
+                st.session_state[flash_key] = None
+
+            confirm_key = f"confirmar_{prefix_bi}"
+            if confirm_key not in st.session_state:
+                st.session_state[confirm_key] = None
+
+            if st.session_state[confirm_key] is True:
+                faltantes = validar_justificaciones(eval_es) + validar_justificaciones(eval_va)
+                if faltantes:
+                    st.error("Faltan justificaciones obligatorias. Completa los campos y vuelve a intentar.")
+                    st.write(faltantes)
+                    st.session_state[confirm_key] = None
+                    st.stop()
+
+                query_es = {"user": user, "tabla": tabla, "idioma": "castellano"}
+                query_va = {"user": user, "tabla": tabla, "idioma": "valenciano"}
+                evals_collection.update_one(query_es, {"$set": doc_es}, upsert=True)
+                evals_collection.update_one(query_va, {"$set": doc_va}, upsert=True)
+                st.session_state[confirm_key] = None
+                st.session_state[flash_key] = "updated" if tiene_previa else "saved"
+                st.rerun()
+            elif st.session_state[confirm_key] is False:
+                st.info("Actualizacion cancelada.")
+                st.session_state[confirm_key] = None
+
+            if st.button(boton_texto, type="primary", key=f"{prefix_bi}_enviar"):
+                faltantes = validar_justificaciones(eval_es) + validar_justificaciones(eval_va)
+                if faltantes:
+                    st.error("Faltan justificaciones obligatorias. Completa los campos y vuelve a intentar.")
+                    st.write(faltantes)
+                    st.stop()
+
+                if tiene_previa:
+                    confirm_dialog(prefix_bi, message="🔄 Ya existe una evaluación para esta tabla en castellano y/o valenciano.")
+                else:
+                    query_es = {"user": user, "tabla": tabla, "idioma": "castellano"}
+                    query_va = {"user": user, "tabla": tabla, "idioma": "valenciano"}
+                    evals_collection.update_one(query_es, {"$set": doc_es}, upsert=True)
+                    evals_collection.update_one(query_va, {"$set": doc_va}, upsert=True)
+                    st.session_state[flash_key] = "saved"
+                    st.rerun()
 
 # -----------------------------
 # MAIN
@@ -351,7 +622,20 @@ tablas_por_idioma = defaultdict(list)
 for t in tablas:
     tablas_por_idioma[t["idioma"]].append(t)
 
-idiomas = sorted(tablas_por_idioma.keys())
+# tablas bilingües (castellano + valenciano)
+bilingue_tablas = {}
+if "castellano" in tablas_por_idioma and "valenciano" in tablas_por_idioma:
+    es_map = {t["id_tabla"]: t for t in tablas_por_idioma["castellano"]}
+    va_map = {t["id_tabla"]: t for t in tablas_por_idioma["valenciano"]}
+    for id_tabla in sorted(set(es_map.keys()) & set(va_map.keys())):
+        bilingue_tablas[id_tabla] = (es_map[id_tabla], va_map[id_tabla])
+
+if not bilingue_tablas:
+    st.warning("No hay tablas bilingües (castellano + valenciano). Revisa la carpeta rdfs/ y csvs/.")
+    st.stop()
+
+if "bilingue_tabla_activa" not in st.session_state:
+    st.session_state["bilingue_tabla_activa"] = next(iter(bilingue_tablas.keys()))
 
 # -----------------------------
 # SIDEBAR
@@ -359,47 +643,43 @@ idiomas = sorted(tablas_por_idioma.keys())
 with st.sidebar:
     st.title("📚 Índice")
     counter = 0
+    ids = list(bilingue_tablas.keys())
+    estado = estado_tablas_bilingue(st.session_state.evaluador, ids)
+    total_evaluadas = sum(1 for tid in ids if estado.get(tid))
+    st.caption(f"Evaluadas: {total_evaluadas}/{len(ids)}")
 
-    for idioma in idiomas:
-        with st.expander(f"🌍 {idioma}"):
-            for t in tablas_por_idioma[idioma]:
-                st.markdown(f"**{t['id_tabla']}**")
+    with st.expander("🧩 tablas a evaluar"):
+        for id_tabla, (t_es, _) in bilingue_tablas.items():
+            badge = "✅" if estado.get(id_tabla) else "⏳"
+            st.markdown(f"**{id_tabla}** {badge}")
+            rdf_content = t_es["rdf_path"].read_text(encoding="utf-8")
+            columnas = parse_dcat_regex(rdf_content)
 
-                rdf_content = t["rdf_path"].read_text(encoding="utf-8")
-                columnas = parse_dcat_regex(rdf_content)
+            prefix_bi = f"bilingue_{id_tabla}"
+            actual = st.session_state.get(f"{prefix_bi}_col", 0)
+            tabla_activa = st.session_state.get("bilingue_tabla_activa")
+            es_tabla_activa = tabla_activa == id_tabla
 
-                prefix = f"{idioma}_{t['id_tabla']}"
-                actual = st.session_state.get(f"{prefix}_col", 0)
+            for i, col in enumerate(columnas):
+                label = f"#{i+1} {col['nombre'][:15]}"
+                if es_tabla_activa and i == actual:
+                    label = f"👉 {label}"
 
-                for i, col in enumerate(columnas):
-                    label = f"#{i+1} {col['nombre'][:15]}"
-                    if i == actual:
-                        label = f"👉 {label}"
+                if st.button(label, key=f"nav_bi_{counter}"):
+                    st.session_state["bilingue_tabla_activa"] = id_tabla
+                    st.session_state[f"{prefix_bi}_col"] = i
+                    st.rerun()
 
-                    if st.button(label, key=f"nav_{counter}"):
-                        st.session_state[f"{prefix}_col"] = i
-                        st.rerun()
-
-                    counter += 1
-
-    if "username" not in st.session_state:
-        st.session_state["username"] = st.text_input("Tu nombre:", "evaluador")
+                counter += 1
 
 # -----------------------------
 # UI PRINCIPAL
 # -----------------------------
-tabs_idioma = st.tabs(idiomas)
+tabs_main = st.tabs(["Tablas a evaluar"])
+with tabs_main[0]:
+    def _fmt_tabla(tid: str) -> str:
+        return f"{'✅' if estado.get(tid) else '⏳'} {tid}"
 
-for idioma_tab, idioma in zip(tabs_idioma, idiomas):
-    with idioma_tab:
-        tablas_idioma = tablas_por_idioma[idioma]
-
-        tabs_tabla = st.tabs([t["id_tabla"] for t in tablas_idioma])
-
-        for tab_tabla, entrada in zip(tabs_tabla, tablas_idioma):
-            prefix = f"{idioma}_{entrada['id_tabla']}"
-
-            if f"{prefix}_col" not in st.session_state:
-                st.session_state[f"{prefix}_col"] = 0
-
-            render_tab(tab_tabla, entrada, prefix)
+    id_tabla = st.selectbox("Tabla", ids, key="bilingue_tabla_activa", format_func=_fmt_tabla)
+    entrada_es, entrada_va = bilingue_tablas[id_tabla]
+    render_tab_bilingue(st.container(), entrada_es, entrada_va, id_tabla)
