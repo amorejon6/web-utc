@@ -288,7 +288,7 @@ def render_tab(tab, entrada, prefix):
             _mostrar_evaluacion_guardada(saved_doc, etiqueta=f"{id_tabla} · {idioma}")
             if not st.session_state[f"{prefix}_eval"]:
                 st.session_state[f"{prefix}_eval"] = _normalizar_eval_dict(saved_doc.get("evaluacion", {}), prefix)
-                st.caption("✅ Evaluación guardada precargada en el formulario.")
+                # st.caption("✅ Evaluación guardada precargada en el formulario.")
 
         col_idx = st.session_state[f"{prefix}_col"]
         col_data = COLUMNAS[col_idx]
@@ -559,8 +559,8 @@ def render_tab_bilingue(tab, entrada_es, entrada_va, id_tabla):
         if saved_va and not st.session_state[f"{prefix_va}_eval"]:
             st.session_state[f"{prefix_va}_eval"] = _normalizar_eval_dict(saved_va.get("evaluacion", {}), prefix_va)
 
-        if (saved_es or saved_va) and (st.session_state[f"{prefix_es}_eval"] or st.session_state[f"{prefix_va}_eval"]):
-            st.caption("✅ Evaluación guardada precargada en el formulario (si estaba vacío).")
+        # if (saved_es or saved_va) and (st.session_state[f"{prefix_es}_eval"] or st.session_state[f"{prefix_va}_eval"]):
+            # st.caption("✅ Evaluación guardada precargada en el formulario (si estaba vacío).")
 
         col_idx = st.session_state[f"{prefix_bi}_col"]
 
