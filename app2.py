@@ -45,6 +45,76 @@ def existe_evaluacion_previa(user, tabla, idioma):
     }
     return evals_collection.find_one(query) is not None
 
+def obtener_evaluacion_guardada(user: str, tabla: str, idioma: str):
+    query = {"user": user, "tabla": tabla, "idioma": idioma}
+    # Por si hubiera duplicados históricos, nos quedamos con la más reciente.
+    return evals_collection.find_one(query, sort=[("_id", -1)])
+
+def _normalizar_eval_dict(evaluacion: dict, expected_prefix: str) -> dict:
+    """
+    Normaliza claves del tipo <prefix>_<col_idx>_<campo> al prefix esperado.
+    Esto permite reutilizar evaluaciones guardadas aunque cambie el prefix.
+    """
+    if not isinstance(evaluacion, dict):
+        return {}
+
+    normalizada: dict = {}
+    for k, v in evaluacion.items():
+        if not isinstance(k, str) or not isinstance(v, dict):
+            continue
+        try:
+            _, col_idx_str, campo = k.rsplit("_", 2)
+            int(col_idx_str)  # valida
+        except Exception:
+            continue
+        nk = f"{expected_prefix}_{col_idx_str}_{campo}"
+        normalizada[nk] = {
+            "correct": bool(v.get("correct", True)),
+            "concise": bool(v.get("concise", True)),
+            "justif_correct": str(v.get("justif_correct", "") or ""),
+            "justif_concise": str(v.get("justif_concise", "") or ""),
+        }
+    return normalizada
+
+def _eval_resumen_df(doc: dict) -> pd.DataFrame:
+    evaluacion = doc.get("evaluacion", {})
+    rows = []
+    for k, v in (evaluacion or {}).items():
+        if not isinstance(k, str) or not isinstance(v, dict):
+            continue
+        try:
+            _, col_idx_str, campo = k.rsplit("_", 2)
+            col_num = int(col_idx_str) + 1
+        except Exception:
+            continue
+        rows.append(
+            {
+                "columna": col_num,
+                "campo": campo,
+                "correcto": bool(v.get("correct", True)),
+                "conciso": bool(v.get("concise", True)),
+                "justif_correct": str(v.get("justif_correct", "") or ""),
+                "justif_concise": str(v.get("justif_concise", "") or ""),
+            }
+        )
+
+    df = pd.DataFrame(rows)
+    if df.empty:
+        return df
+    df = df.sort_values(["columna", "campo"]).reset_index(drop=True)
+    return df
+
+def _mostrar_evaluacion_guardada(doc: dict, *, etiqueta: str):
+    ts = doc.get("timestamp")
+    st.info(f"📌 Hay una evaluación guardada ({etiqueta}). Última actualización: {ts or '—'}.")
+    df = _eval_resumen_df(doc)
+    if df.empty:
+        return
+    total = len(df)
+    incorrectas = int((~df["correcto"]).sum())
+    no_concisas = int((~df["conciso"]).sum())
+    st.caption(f"Resumen: {total} checks · incorrectas: {incorrectas} · no concisas: {no_concisas}")
+
 def estado_tablas_bilingue(user: str, tablas_ids: list[str]) -> dict[str, bool]:
     """
     Devuelve {id_tabla: True/False} indicando si la tabla está evaluada en ambos idiomas
@@ -187,6 +257,7 @@ def render_tab(tab, entrada, prefix):
     csv_path = entrada["csv_path"]
 
     with tab:
+        user = st.session_state.evaluador
         rdf_content = rdf_path.read_text(encoding="utf-8")
         COLUMNAS = parse_dcat_regex(rdf_content)
 
@@ -210,6 +281,14 @@ def render_tab(tab, entrada, prefix):
             st.session_state[f"{prefix}_col"] = 0
         if f"{prefix}_eval" not in st.session_state:
             st.session_state[f"{prefix}_eval"] = {}
+
+        # Si existe evaluación guardada, la mostramos y (si procede) precargamos el formulario
+        saved_doc = obtener_evaluacion_guardada(user, id_tabla, idioma)
+        if saved_doc:
+            _mostrar_evaluacion_guardada(saved_doc, etiqueta=f"{id_tabla} · {idioma}")
+            if not st.session_state[f"{prefix}_eval"]:
+                st.session_state[f"{prefix}_eval"] = _normalizar_eval_dict(saved_doc.get("evaluacion", {}), prefix)
+                st.caption("✅ Evaluación guardada precargada en el formulario.")
 
         col_idx = st.session_state[f"{prefix}_col"]
         col_data = COLUMNAS[col_idx]
@@ -424,6 +503,7 @@ def render_tab_bilingue(tab, entrada_es, entrada_va, id_tabla):
     ui_va = f"{prefix_bi}_ui_va"
 
     with tab:
+        user = st.session_state.evaluador
         rdf_content_es = entrada_es["rdf_path"].read_text(encoding="utf-8")
         rdf_content_va = entrada_va["rdf_path"].read_text(encoding="utf-8")
         columnas_es = parse_dcat_regex(rdf_content_es)
@@ -465,6 +545,22 @@ def render_tab_bilingue(tab, entrada_es, entrada_va, id_tabla):
             st.session_state[f"{prefix_es}_eval"] = {}
         if f"{prefix_va}_eval" not in st.session_state:
             st.session_state[f"{prefix_va}_eval"] = {}
+
+        # Si existen evaluaciones guardadas, las mostramos y precargamos el formulario si está vacío
+        saved_es = obtener_evaluacion_guardada(user, id_tabla, "castellano")
+        saved_va = obtener_evaluacion_guardada(user, id_tabla, "valenciano")
+        if saved_es:
+            _mostrar_evaluacion_guardada(saved_es, etiqueta=f"{id_tabla} · castellano")
+        if saved_va:
+            _mostrar_evaluacion_guardada(saved_va, etiqueta=f"{id_tabla} · valenciano")
+
+        if saved_es and not st.session_state[f"{prefix_es}_eval"]:
+            st.session_state[f"{prefix_es}_eval"] = _normalizar_eval_dict(saved_es.get("evaluacion", {}), prefix_es)
+        if saved_va and not st.session_state[f"{prefix_va}_eval"]:
+            st.session_state[f"{prefix_va}_eval"] = _normalizar_eval_dict(saved_va.get("evaluacion", {}), prefix_va)
+
+        if (saved_es or saved_va) and (st.session_state[f"{prefix_es}_eval"] or st.session_state[f"{prefix_va}_eval"]):
+            st.caption("✅ Evaluación guardada precargada en el formulario (si estaba vacío).")
 
         col_idx = st.session_state[f"{prefix_bi}_col"]
 
