@@ -682,6 +682,12 @@ def render_tab_bilingue(tab, entrada_es, entrada_va, id_tabla):
                 evals_collection.update_one(query_es, {"$set": doc_es}, upsert=True)
                 evals_collection.update_one(query_va, {"$set": doc_va}, upsert=True)
                 st.session_state[confirm_key] = None
+                st.session_state["bilingue_tabla_activa"] = tabla
+                # No modificamos directamente la key del selectbox aquí porque el widget
+                # ya se ha dibujado en esta ejecución. Dejamos una sincronización pendiente
+                # para aplicarla al principio del siguiente rerun.
+                st.session_state["_bilingue_tabla_selector_pending"] = tabla
+                st.session_state[f"{prefix_bi}_col"] = col_idx
                 st.session_state[flash_key] = "updated" if tiene_previa else "saved"
                 st.rerun()
             elif st.session_state[confirm_key] is False:
@@ -702,6 +708,12 @@ def render_tab_bilingue(tab, entrada_es, entrada_va, id_tabla):
                     query_va = {"user": user, "tabla": tabla, "idioma": "valenciano"}
                     evals_collection.update_one(query_es, {"$set": doc_es}, upsert=True)
                     evals_collection.update_one(query_va, {"$set": doc_va}, upsert=True)
+                    st.session_state["bilingue_tabla_activa"] = tabla
+                    # No modificamos directamente la key del selectbox aquí porque el widget
+                    # ya se ha dibujado en esta ejecución. Dejamos una sincronización pendiente
+                    # para aplicarla al principio del siguiente rerun.
+                    st.session_state["_bilingue_tabla_selector_pending"] = tabla
+                    st.session_state[f"{prefix_bi}_col"] = col_idx
                     st.session_state[flash_key] = "saved"
                     st.rerun()
 
@@ -730,8 +742,35 @@ if not bilingue_tablas:
     st.warning("No hay tablas bilingües (castellano + valenciano). Revisa la carpeta rdfs/ y csvs/.")
     st.stop()
 
-if "bilingue_tabla_activa" not in st.session_state:
-    st.session_state["bilingue_tabla_activa"] = next(iter(bilingue_tablas.keys()))
+ids = list(bilingue_tablas.keys())
+
+# Si venimos de guardar/actualizar, sincronizamos el selectbox ANTES de dibujarlo.
+# Esto evita que Streamlit vuelva al primer fichero o lance error por modificar
+# la key de un widget después de haber sido instanciado.
+pending_selector = st.session_state.pop("_bilingue_tabla_selector_pending", None)
+if pending_selector in ids:
+    st.session_state["bilingue_tabla_activa"] = pending_selector
+    st.session_state["bilingue_tabla_selector"] = pending_selector
+
+# Guardamos la tabla activa en una clave estable y usamos otra clave distinta para el widget.
+# Esto evita que el selectbox vuelva al primer fichero cuando cambia la etiqueta
+# de la opción tras guardar (⏳ no evaluada -> ✅ evaluada) y Streamlit hace rerun.
+if (
+    "bilingue_tabla_activa" not in st.session_state
+    or st.session_state["bilingue_tabla_activa"] not in ids
+):
+    st.session_state["bilingue_tabla_activa"] = ids[0]
+
+if (
+    "bilingue_tabla_selector" not in st.session_state
+    or st.session_state["bilingue_tabla_selector"] not in ids
+):
+    st.session_state["bilingue_tabla_selector"] = st.session_state["bilingue_tabla_activa"]
+
+def sincronizar_tabla_activa_desde_selector():
+    tabla = st.session_state.get("bilingue_tabla_selector")
+    if tabla in bilingue_tablas:
+        st.session_state["bilingue_tabla_activa"] = tabla
 
 # -----------------------------
 # SIDEBAR
@@ -739,7 +778,6 @@ if "bilingue_tabla_activa" not in st.session_state:
 with st.sidebar:
     st.title("📚 Índice")
     counter = 0
-    ids = list(bilingue_tablas.keys())
     estado = estado_tablas_bilingue(st.session_state.evaluador, ids)
     total_evaluadas = sum(1 for tid in ids if estado.get(tid))
     st.caption(f"Evaluadas: {total_evaluadas}/{len(ids)}")
@@ -763,6 +801,7 @@ with st.sidebar:
 
                 if st.button(label, key=f"nav_bi_{counter}"):
                     st.session_state["bilingue_tabla_activa"] = id_tabla
+                    st.session_state["bilingue_tabla_selector"] = id_tabla
                     st.session_state[f"{prefix_bi}_col"] = i
                     st.rerun()
 
@@ -776,6 +815,24 @@ with tabs_main[0]:
     def _fmt_tabla(tid: str) -> str:
         return f"{tid} {'✅ (evaluada)' if estado.get(tid) else '⏳ (no evaluada)'}"
 
-    id_tabla = st.selectbox("Tabla", ids, key="bilingue_tabla_activa", format_func=_fmt_tabla)
+    # Si la navegación lateral cambió la tabla activa, sincronizamos el widget
+    # antes de dibujarlo. La clave del widget es distinta de la clave de estado real.
+    tabla_activa = st.session_state.get("bilingue_tabla_activa", ids[0])
+    if tabla_activa not in ids:
+        tabla_activa = ids[0]
+        st.session_state["bilingue_tabla_activa"] = tabla_activa
+
+    if st.session_state.get("bilingue_tabla_selector") != tabla_activa:
+        st.session_state["bilingue_tabla_selector"] = tabla_activa
+
+    st.selectbox(
+        "Tabla",
+        ids,
+        key="bilingue_tabla_selector",
+        format_func=_fmt_tabla,
+        on_change=sincronizar_tabla_activa_desde_selector,
+    )
+
+    id_tabla = st.session_state["bilingue_tabla_activa"]
     entrada_es, entrada_va = bilingue_tablas[id_tabla]
     render_tab_bilingue(st.container(), entrada_es, entrada_va, id_tabla)
