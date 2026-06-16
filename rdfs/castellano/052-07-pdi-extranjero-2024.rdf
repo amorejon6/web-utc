@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>NACIONALIDAD</schema:name>
+      <schema:description>Pais de origen de los profesores</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL</schema:name>
+      <schema:description>Total de profesores registrados</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>CATEDRÁTICO/A DE UNIVERSIDAD</schema:name>
+      <schema:description>Numero de catedráticos universitarios</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESOR/A TITULAR DE UNIVERSIDAD</schema:name>
+      <schema:description>Numero de profesores titulares universitarios</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESOR/A PERMANENTE LABORAL</schema:name>
+      <schema:description>Numero de profesores permanentes laborales</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESOR/A AYUDANTE DOCTOR/A</schema:name>
+      <schema:description>Numero de profesores ayudantes doctorales</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>AYUDANTE LOU</schema:name>
+      <schema:description>Numero de ayudantes LOU</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESOR/A COLABORADOR/A</schema:name>
+      <schema:description>Numero de profesores colaboradores</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESOR/A ASOCIADO/A</schema:name>
+      <schema:description>Numero de profesores asociados</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESOR/A VISITANTE</schema:name>
+      <schema:description>Numero de profesores visitantes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

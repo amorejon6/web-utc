@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>GRADOS</schema:name>
+      <schema:description>Nombre del grado o programa académico</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Núm. PDI a tiempo completo</schema:name>
+      <schema:description>Número total de personal docente investigador a tiempo completo en el grado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Núm. PDI</schema:name>
+      <schema:description>Número total de personal docente investigador en el grado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tasa de PDI a tiempo completo (%)</schema:name>
+      <schema:description>Porcentaje de personal docente investigador a tiempo completo respecto al total en el grado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Núm. PDI a tiempo completo</schema:name>
+      <schema:description>Número de mujeres en el personal docente investigador a tiempo completo en el grado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Núm. PDI</schema:name>
+      <schema:description>Número total de mujeres en el personal docente investigador en el grado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tasa de PDI a tiempo completo (%)</schema:name>
+      <schema:description>Porcentaje de mujeres en el personal docente investigador respecto al total en el grado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Núm. PDI a tiempo completo</schema:name>
+      <schema:description>Número de hombres en el personal docente investigador a tiempo completo en el grado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Núm. PDI</schema:name>
+      <schema:description>Número total de hombres en el personal docente investigador en el grado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tasa de PDI a tiempo completo (%)</schema:name>
+      <schema:description>Porcentaje de hombres en el personal docente investigador respecto al total en el grado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

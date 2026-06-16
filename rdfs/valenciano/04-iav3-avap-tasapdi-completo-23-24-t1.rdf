@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>GRAUS</schema:name>
+      <schema:description>Nom del grau o doble grau</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nre. PDI a temps complet</schema:name>
+      <schema:description>Nombre de personal docent investigador a temps complet per grau</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nre. PDI</schema:name>
+      <schema:description>Nombre total de personal docent investigador per grau</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Taxa de PDI a temps complet (%)</schema:name>
+      <schema:description>Percentatge de personal docent investigador a temps complet respecte al total</schema:description>
+      <schema:valueType rdf:resource="xsd:double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Nre. PDI a temps complet</schema:name>
+      <schema:description>Nombre de dones personal docent investigador a temps complet per grau</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Nre. PDI</schema:name>
+      <schema:description>Nombre total de dones personal docent investigador per grau</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Taxa de PDI a temps complet (%)</schema:name>
+      <schema:description>Percentatge de dones personal docent investigador a temps complet respecte al total</schema:description>
+      <schema:valueType rdf:resource="xsd:double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Nre. PDI a temps complet</schema:name>
+      <schema:description>Nombre d'homes personal docent investigador a temps complet per grau</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Nre. PDI</schema:name>
+      <schema:description>Nombre total d'homes personal docent investigador per grau</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Taxa de PDI a temps complet (%)</schema:name>
+      <schema:description>Percentatge d'homes personal docent investigador a temps complet respecte al total</schema:description>
+      <schema:valueType rdf:resource="xsd:double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

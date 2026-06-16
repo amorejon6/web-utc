@@ -1,0 +1,19 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>ÚS</schema:name>
+      <schema:description>Tipus d'ús del campus</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>CAMPUS (*)</schema:name>
+      <schema:description>Àrea del campus en metres quadrats</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>AMPLIACIÓ</schema:name>
+      <schema:description>Ampliació del campus en metres quadrats</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

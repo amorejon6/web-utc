@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal de investigación (I-PI): ÁREA DE FORMACIÓN (NÚMERO I-PI)</schema:name>
+      <schema:description>ÁREA DE FORMACIÓN (NÚMERO I-PI)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Núm. I-PI que ha realizado/impartido cursos de formación - TOTAL</schema:name>
+      <schema:description>Núm. I-PI que ha realizado/impartido cursos de formación - TOTAL</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Núm. I-PI que ha realizado/impartido cursos de formación - MUJERES</schema:name>
+      <schema:description>Núm. I-PI que ha realizado/impartido cursos de formación - MUJERES</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Núm. I-PI que ha realizado/impartido cursos de formación - HOMBRES</schema:name>
+      <schema:description>Núm. I-PI que ha realizado/impartido cursos de formación - HOMBRES</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÀSTERS</schema:name>
+      <schema:description>Nom del màster o programa acadèmic</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nous o que sol·liciten preinscripció</schema:name>
+      <schema:description>Nombre de sol·licituds de preinscripció</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. Places oferides</schema:name>
+      <schema:description>Nombre de places oferides per al màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Taxa de matriculació %</schema:name>
+      <schema:description>Taxa de matriculació en percentatge</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

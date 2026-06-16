@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMAS DE DOCTORADO - TESIS CON LA CALIFICACIÓN CUM LAUDE</schema:name>
+      <schema:description>Nombre del programa de doctorado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis con la calificación cum laude</schema:name>
+      <schema:description>Número de tesis con calificación cum laude en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis defendidas</schema:name>
+      <schema:description>Número total de tesis defendidas en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis con la calificación  cum laude (%)</schema:name>
+      <schema:description>Porcentaje de tesis con calificación cum laude en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tesis con la calificación cum laude</schema:name>
+      <schema:description>Número de tesis con calificación cum laude defendidas por mujeres en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tesis defendidas</schema:name>
+      <schema:description>Número total de tesis defendidas por mujeres en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tesis con la calificación  cum laude (%)</schema:name>
+      <schema:description>Porcentaje de tesis con calificación cum laude defendidas por mujeres en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tesis con la calificación cum laude</schema:name>
+      <schema:description>Número de tesis con calificación cum laude defendidas por hombres en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tesis defendidas</schema:name>
+      <schema:description>Número total de tesis defendidas por hombres en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tesis con la calificación  cum laude (%)</schema:name>
+      <schema:description>Porcentaje de tesis con calificación cum laude defendidas por hombres en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

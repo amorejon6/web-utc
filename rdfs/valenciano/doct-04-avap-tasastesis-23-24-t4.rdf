@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMES DE DOCTORAT - DOCTORS/ES AMB ESMENT INDUSTRIAL</schema:name>
+      <schema:description>Nom del programa de doctorat</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/String"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Doctors/es amb esment industrial</schema:name>
+      <schema:description>Nombre total de doctors/es amb esment industrial per programa</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis defensades</schema:name>
+      <schema:description>Nombre total de tesis defensades per programa</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Doctors/es amb esment industrial (%)</schema:name>
+      <schema:description>Percentatge de doctors/es amb esment industrial respecte al total per programa</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Doctors/es amb esment industrial</schema:name>
+      <schema:description>Nombre de dones amb esment industrial per programa</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Tesis defensades</schema:name>
+      <schema:description>Nombre de tesis defensades per dones amb esment industrial per programa</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Doctors/es amb esment industrial (%)</schema:name>
+      <schema:description>Percentatge de dones amb esment industrial respecte al total per programa</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Doctors/es amb esment industrial</schema:name>
+      <schema:description>Nombre d'homes amb esment industrial per programa</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Tesis defensades</schema:name>
+      <schema:description>Nombre de tesis defensades per homes amb esment industrial per programa</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Doctors/es amb esment industrial (%)</schema:name>
+      <schema:description>Percentatge d'homes amb esment industrial respecte al total per programa</schema:description>
+      <schema:valueType rdf:resource="http://schema.org/Integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

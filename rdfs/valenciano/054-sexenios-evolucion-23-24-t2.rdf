@@ -1,0 +1,69 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Sexennis  Aconseguits / Potencials</schema:name>
+      <schema:description>Categoria que indica Aconseguits / Potencials</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2020-21 - Total</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2020-21 en total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2020-21 - Dones</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2020-21 per a dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2020-21 - Homes</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2020-21 per a homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2021-22 - Total</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2021-22 en total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2021-22 - Dones</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2021-22 per a dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2021-22 - Homes</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2021-22 per a homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2022-23 - Total</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2022-23 en total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2022-23 - Dones</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2022-23 per a dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2022-23 - Homes</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2022-23 per a homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2023-24 - Total</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2023-24 en total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2023-24 - Dones</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2023-24 per a dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2023-24 - Homes</schema:name>
+      <schema:description>Percentatge d'Aconseguits / Potencials per a l'any 2023-24 per a homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

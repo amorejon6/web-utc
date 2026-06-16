@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMAS DE DOCTORADO</schema:name>
+      <schema:description>Nombre del programa de doctorado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Matrícula total</schema:name>
+      <schema:description>Número total de matrículas en el programa de doctorado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>%  Residencia fuera de la Comunidad Valenciana</schema:name>
+      <schema:description>Porcentaje de estudiantes con residencia fuera de la Comunidad Valenciana</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>%  Nacionalidad no española</schema:name>
+      <schema:description>Porcentaje de estudiantes con nacionalidad no española</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

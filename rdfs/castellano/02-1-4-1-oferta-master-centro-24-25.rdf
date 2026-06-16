@@ -1,0 +1,19 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>CENTRO</schema:name>
+      <schema:description>Nom de l'entitat educativa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nº</schema:name>
+      <schema:description>Nombre de centres educatius</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>%</schema:name>
+      <schema:description>Percentatge de centres educatius</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

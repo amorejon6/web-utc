@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMAS DE DOCTORADO</schema:name>
+      <schema:description>Nombre del programa de doctorado</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Abandonos</schema:name>
+      <schema:description>Número total de estudiantes que abandonaron el programa</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiantes nuevos</schema:name>
+      <schema:description>Número total de estudiantes nuevos inscritos en el programa</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tasa Abandono  (%)</schema:name>
+      <schema:description>Tasa de abandono del programa expresada en porcentaje</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Abandonos</schema:name>
+      <schema:description>Número total de mujeres que abandonaron el programa</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Estudiantes nuevos</schema:name>
+      <schema:description>Número total de mujeres nuevas inscritas en el programa</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tasa Abandono  (%)</schema:name>
+      <schema:description>Tasa de abandono de mujeres en el programa expresada en porcentaje</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Abandonos</schema:name>
+      <schema:description>Número total de hombres que abandonaron el programa</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Estudiantes nuevos</schema:name>
+      <schema:description>Número total de hombres nuevos inscritos en el programa</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tasa Abandono  (%)</schema:name>
+      <schema:description>Tasa de abandono de hombres en el programa expresada en porcentaje</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

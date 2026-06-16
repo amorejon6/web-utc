@@ -1,0 +1,39 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>TIPUS ADMINISTRACIÓ</schema:name>
+      <schema:description>Tipus d'administració</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total - Nre.</schema:name>
+      <schema:description>Total de casos registrats</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total - %</schema:name>
+      <schema:description>Percentatge total de casos registrats</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Dones - Nre.</schema:name>
+      <schema:description>Nombre de dones registrades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Dones - %</schema:name>
+      <schema:description>Percentatge de dones registrades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Homes - Nre.</schema:name>
+      <schema:description>Nombre d'homes registrats</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Homes - %</schema:name>
+      <schema:description>Percentatge d'homes registrats</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

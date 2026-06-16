@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÀSTERS UNIVERSITARIS</schema:name>
+      <schema:description>Nom del màster universitari</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total</schema:name>
+      <schema:description>Total d'estudiants inscrits en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Dones</schema:name>
+      <schema:description>Nombre d'estudiants dones inscrits</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Homes</schema:name>
+      <schema:description>Nombre d'estudiants homes inscrits</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÁSTERES</schema:name>
+      <schema:description>Nombre del máster ofrecido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nuevos o que solicitan preinscripción</schema:name>
+      <schema:description>Número de nuevos estudiantes que solicitan preinscripción</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nº Plazas ofertadas</schema:name>
+      <schema:description>Número de plazas ofertadas para el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Tasa de matriculación (%)</schema:name>
+      <schema:description>Tasa de matriculación expresada en porcentaje</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

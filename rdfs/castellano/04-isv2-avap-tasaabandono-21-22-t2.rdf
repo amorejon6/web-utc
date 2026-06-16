@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÁSTERES</schema:name>
+      <schema:description>Nombre del máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Alumnos nuevos  (n-2)</schema:name>
+      <schema:description>Total de nuevos estudiantes en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nuevos que abandonan (n y n-1)</schema:name>
+      <schema:description>Total de nuevos estudiantes que abandonan el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tasa Abandono (%)</schema:name>
+      <schema:description>Tasa de abandono del programa en porcentaje</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Alumnos nuevos  (n-2)</schema:name>
+      <schema:description>Total de mujeres nuevas en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Nuevos que abandonan (n y n-1)</schema:name>
+      <schema:description>Total de mujeres nuevas que abandonan el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tasa Abandono (%)</schema:name>
+      <schema:description>Tasa de abandono de mujeres en porcentaje</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Alumnos nuevos  (n-2)</schema:name>
+      <schema:description>Total de hombres nuevos en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Nuevos que abandonan (n y n-1)</schema:name>
+      <schema:description>Total de hombres nuevos que abandonan el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tasa Abandono (%)</schema:name>
+      <schema:description>Tasa de abandono de hombres en porcentaje</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

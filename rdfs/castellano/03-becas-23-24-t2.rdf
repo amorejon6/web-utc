@@ -1,0 +1,14 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Administración (convocatoria etudios de máster)</schema:name>
+      <schema:description>Administración responsable de la convocatoria de estudios de máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Cuantía para estudiantes de máster</schema:name>
+      <schema:description>Monto asignado a estudiantes de máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

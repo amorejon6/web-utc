@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÀSTERS</schema:name>
+      <schema:description>Nom del màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nre. PDI doctor</schema:name>
+      <schema:description>Nombre total de doctorats en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nre. PDI</schema:name>
+      <schema:description>Nombre total de personal docent investigador en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Taxa de PDI doctor (%)</schema:name>
+      <schema:description>Taxa de doctorats entre el total de personal docent investigador en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Nre. PDI doctor</schema:name>
+      <schema:description>Nombre de dones doctorades en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Nre. PDI</schema:name>
+      <schema:description>Nombre de dones en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Taxa de PDI doctor (%)</schema:name>
+      <schema:description>Taxa de doctorats entre el total de dones en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Nre. PDI doctor</schema:name>
+      <schema:description>Nombre d'homes doctorats en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Nre. PDI</schema:name>
+      <schema:description>Nombre d'homes en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Taxa de PDI doctor (%)</schema:name>
+      <schema:description>Taxa de doctorats entre el total d'homes en el màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÁSTERS</schema:name>
+      <schema:description>Nom del màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nre. PDI a temps complet</schema:name>
+      <schema:description>Nombre de personal docent investigador a temps complet</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nre. PDI</schema:name>
+      <schema:description>Nombre total de personal docent investigador</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Taxa de PDI a temps complet (%)</schema:name>
+      <schema:description>Taxa de personal docent investigador a temps complet en relació amb el total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Nre. PDI a temps complet</schema:name>
+      <schema:description>Nombre de dones personal docent investigador a temps complet</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Nre. PDI</schema:name>
+      <schema:description>Nombre total de dones personal docent investigador</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Taxa de PDI a temps complet (%)</schema:name>
+      <schema:description>Taxa de dones personal docent investigador a temps complet en relació amb el total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Nre. PDI a temps complet</schema:name>
+      <schema:description>Nombre d'homes personal docent investigador a temps complet</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Nre. PDI</schema:name>
+      <schema:description>Nombre total d'homes personal docent investigador</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Taxa de PDI a temps complet (%)</schema:name>
+      <schema:description>Taxa d'homes personal docent investigador a temps complet en relació amb el total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

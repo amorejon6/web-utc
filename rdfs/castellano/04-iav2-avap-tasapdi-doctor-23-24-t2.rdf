@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÁSTERES</schema:name>
+      <schema:description>Nombre del máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Núm. PDI doctor</schema:name>
+      <schema:description>Número total de personal de investigación doctor en el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Núm. PDI</schema:name>
+      <schema:description>Número total de personal de investigación en el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tasa de PDI doctor (%)</schema:name>
+      <schema:description>Tasa de personal de investigación doctor en el máster (%)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Núm. PDI doctor</schema:name>
+      <schema:description>Número de mujeres con personal de investigación doctor en el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Núm. PDI</schema:name>
+      <schema:description>Número de mujeres con personal de investigación en el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tasa de PDI doctor (%)</schema:name>
+      <schema:description>Tasa de mujeres con personal de investigación doctor en el máster (%)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Núm. PDI doctor</schema:name>
+      <schema:description>Número de hombres con personal de investigación doctor en el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Núm. PDI</schema:name>
+      <schema:description>Número de hombres con personal de investigación en el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tasa de PDI doctor (%)</schema:name>
+      <schema:description>Tasa de hombres con personal de investigación doctor en el máster (%)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

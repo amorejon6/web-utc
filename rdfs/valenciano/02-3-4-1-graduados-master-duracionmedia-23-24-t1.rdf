@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÀSTERES - Durada teòrica dels estudis 1 any</schema:name>
+      <schema:description>Nom dels màsters</schema:description>
+      <schema:valueType rdf:resource="schema:String"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total</schema:name>
+      <schema:description>Durada teòrica total dels estudis</schema:description>
+      <schema:valueType rdf:resource="schema:Double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Dones</schema:name>
+      <schema:description>Durada teòrica dels estudis per dones</schema:description>
+      <schema:valueType rdf:resource="schema:Double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Homes</schema:name>
+      <schema:description>Durada teòrica dels estudis per homes</schema:description>
+      <schema:valueType rdf:resource="schema:Double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

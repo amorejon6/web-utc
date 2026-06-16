@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>GRAUS</schema:name>
+      <schema:description>Nom del grau o titulació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Crèdits matriculats</schema:name>
+      <schema:description>Total de crèdits matriculats per a tots els estudiants</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Crèdits matriculats aptes</schema:name>
+      <schema:description>Total de crèdits matriculats aptes per a tots els estudiants</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Taxa de rendiment (%)</schema:name>
+      <schema:description>Taxa de rendiment (%) dels crèdits matriculats per a tots els estudiants</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Crèdits matriculats</schema:name>
+      <schema:description>Total de crèdits matriculats per a dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Crèdits matriculats aptes</schema:name>
+      <schema:description>Total de crèdits matriculats aptes per a dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Taxa de rendiment (%)</schema:name>
+      <schema:description>Taxa de rendiment (%) dels crèdits matriculats per a dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Crèdits matriculats</schema:name>
+      <schema:description>Total de crèdits matriculats per a homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Crèdits matriculats aptes</schema:name>
+      <schema:description>Total de crèdits matriculats aptes per a homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Taxa de rendiment (%)</schema:name>
+      <schema:description>Taxa de rendiment (%) dels crèdits matriculats per a homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

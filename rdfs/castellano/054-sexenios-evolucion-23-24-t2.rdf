@@ -1,0 +1,69 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Sexenios Conseguidos / Potenciales</schema:name>
+      <schema:description>Nombre del sexenio o periodo</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2020-21 - Total</schema:name>
+      <schema:description>Porcentaje total de sexenios conseguidos o potenciales en el periodo 2020-21</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2020-21 - Mujeres</schema:name>
+      <schema:description>Porcentaje de mujeres en el periodo 2020-21</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2020-21 - Hombres</schema:name>
+      <schema:description>Porcentaje de hombres en el periodo 2020-21</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2021-22 - Total</schema:name>
+      <schema:description>Porcentaje total de sexenios conseguidos o potenciales en el periodo 2021-22</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2021-22 - Mujeres</schema:name>
+      <schema:description>Porcentaje de mujeres en el periodo 2021-22</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2021-22 - Hombres</schema:name>
+      <schema:description>Porcentaje de hombres en el periodo 2021-22</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2022-23 - Total</schema:name>
+      <schema:description>Porcentaje total de sexenios conseguidos o potenciales en el periodo 2022-23</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2022-23 - Mujeres</schema:name>
+      <schema:description>Porcentaje de mujeres en el periodo 2022-23</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2022-23 - Hombres</schema:name>
+      <schema:description>Porcentaje de hombres en el periodo 2022-23</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2023-24 - Total</schema:name>
+      <schema:description>Porcentaje total de sexenios conseguidos o potenciales en el periodo 2023-24</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2023-24 - Mujeres</schema:name>
+      <schema:description>Porcentaje de mujeres en el periodo 2023-24</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>2023-24 - Hombres</schema:name>
+      <schema:description>Porcentaje de hombres en el periodo 2023-24</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

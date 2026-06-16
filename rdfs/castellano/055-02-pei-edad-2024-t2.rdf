@@ -1,0 +1,39 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal Técnico, de Gestión y de Apoyo a la Investigación (I-PTGAS)</schema:name>
+      <schema:description>Rango de edades de los empleados</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total - Nº</schema:name>
+      <schema:description>Número total de personal en cada rango de edades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total - %</schema:name>
+      <schema:description>Porcentaje total de personal en cada rango de edades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Mujeres - Nº</schema:name>
+      <schema:description>Número de mujeres en cada rango de edades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Mujeres - %</schema:name>
+      <schema:description>Porcentaje de mujeres en cada rango de edades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Hombres - Nº</schema:name>
+      <schema:description>Número de hombres en cada rango de edades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Hombres - %</schema:name>
+      <schema:description>Porcentaje de hombres en cada rango de edades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

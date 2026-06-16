@@ -1,0 +1,59 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÀSTERS</schema:name>
+      <schema:description>Nom del màster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Curs d'ingrés</schema:name>
+      <schema:description>Any d'ingrés dels alumnes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Alumnes inicials</schema:name>
+      <schema:description>Total d'alumnes inicials</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Titulats en temps previst en pla d'estudis (d)  o en (d+1)</schema:name>
+      <schema:description>Total de titulats en temps previst o en d+1</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Taxa de graduació (%)</schema:name>
+      <schema:description>Taxa de graduació total (%)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Alumnes inicials</schema:name>
+      <schema:description>Total d'alumnes dones inicials</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Titulats en temps previst en pla d'estudis (d)  o en (d+1)</schema:name>
+      <schema:description>Total de dones titulades en temps previst o en d+1</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Taxa de graduació (%)</schema:name>
+      <schema:description>Taxa de graduació de dones (%)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Alumnes inicials</schema:name>
+      <schema:description>Total d'alumnes homes inicials</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Titulats en temps previst en pla d'estudis (d)  o en (d+1)</schema:name>
+      <schema:description>Total d'homes titulats en temps previst o en d+1</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Taxa de graduació (%)</schema:name>
+      <schema:description>Taxa de graduació d'homes (%)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

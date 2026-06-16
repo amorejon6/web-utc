@@ -1,0 +1,39 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>BRANCA D'ENSENYAMENT</schema:name>
+      <schema:description>Nom de la branca d'ensenyament</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total - Nre.</schema:name>
+      <schema:description>Nombre total d'estudiants de la branca</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total - %</schema:name>
+      <schema:description>Percentatge total d'estudiants de la branca respecte al total general</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Dones - Nre.</schema:name>
+      <schema:description>Nombre d'estudiants dones de la branca</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Dones - %</schema:name>
+      <schema:description>Percentatge d'estudiants dones respecte al total d'estudiants de la branca</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Homes - Nre.</schema:name>
+      <schema:description>Nombre d'estudiants homes de la branca</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Homes - %</schema:name>
+      <schema:description>Percentatge d'estudiants homes respecte al total d'estudiants de la branca</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

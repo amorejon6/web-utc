@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMAS DE DOCTORADO - DOCTORES/AS EN RÉGIMEN DE COTUTELA INTERNACIONAL</schema:name>
+      <schema:description>Nombre del programa de doctorado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Doctores/as con tesis en régimen de cotutela internacional</schema:name>
+      <schema:description>Total de doctores/as con tesis en régimen de cotutela internacional</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis defendidas</schema:name>
+      <schema:description>Total de tesis defendidas</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Doctores/as con tesis en régimen de cotutela internacional (%)</schema:name>
+      <schema:description>Porcentaje de doctores/as con tesis en régimen de cotutela internacional respecto al total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Doctores/as con tesis en régimen de cotutela internacional</schema:name>
+      <schema:description>Número de mujeres doctores/as con tesis en régimen de cotutela internacional</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tesis defendidas</schema:name>
+      <schema:description>Número de tesis defendidas por mujeres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Doctores/as con tesis en régimen de cotutela internacional (%)</schema:name>
+      <schema:description>Porcentaje de mujeres doctores/as con tesis en régimen de cotutela internacional respecto al total de mujeres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Doctores/as con tesis en régimen de cotutela internacional</schema:name>
+      <schema:description>Número de hombres doctores/as con tesis en régimen de cotutela internacional</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tesis defendidas</schema:name>
+      <schema:description>Número de tesis defendidas por hombres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Doctores/as con tesis en régimen de cotutela internacional (%)</schema:name>
+      <schema:description>Porcentaje de hombres doctores/as con tesis en régimen de cotutela internacional respecto al total de hombres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>GRAUS</schema:name>
+      <schema:description>Nom del grau o programa acadèmic</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Alumnes nous  (n-2)</schema:name>
+      <schema:description>Nombre total d'alumnes nous inscrits en el grau el curs anterior al curs actual</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nous que abandonen  (n i n-1)</schema:name>
+      <schema:description>Nombre total d'alumnes nous que abandonen el grau en els dos cursos anteriors</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Taxa Abandó (%)</schema:name>
+      <schema:description>Taxa d'abandó d'alumnes nous expressada en percentatge</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Alumnes nous  (n-2)</schema:name>
+      <schema:description>Nombre d'alumnes dones nous inscrits en el grau el curs anterior al curs actual</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Nous que abandonen  (n i n-1)</schema:name>
+      <schema:description>Nombre d'alumnes dones nous que abandonen el grau en els dos cursos anteriors</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Taxa Abandó (%)</schema:name>
+      <schema:description>Taxa d'abandó d'alumnes dones expressada en percentatge</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Alumnes nous  (n-2)</schema:name>
+      <schema:description>Nombre d'alumnes homes nous inscrits en el grau el curs anterior al curs actual</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Nous que abandonen  (n i n-1)</schema:name>
+      <schema:description>Nombre d'alumnes homes nous que abandonen el grau en els dos cursos anteriors</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Taxa Abandó (%)</schema:name>
+      <schema:description>Taxa d'abandó d'alumnes homes expressada en percentatge</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

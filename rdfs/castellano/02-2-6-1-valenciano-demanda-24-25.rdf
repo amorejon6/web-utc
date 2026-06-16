@@ -1,0 +1,69 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>CENTRO</schema:name>
+      <schema:description>Nombre de la institución educativa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - VALENCIANO</schema:name>
+      <schema:description>Total de estudiantes que respondieron en valenciano (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - CASTELLANO</schema:name>
+      <schema:description>Total de estudiantes que respondieron en castellano (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - INDIFERENTE</schema:name>
+      <schema:description>Total de estudiantes que respondieron indiferentemente (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - NS/NC</schema:name>
+      <schema:description>Total de estudiantes que no respondieron o no contestaron (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - VALENCIANO</schema:name>
+      <schema:description>Número de mujeres que respondieron en valenciano (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - CASTELLANO</schema:name>
+      <schema:description>Número de mujeres que respondieron en castellano (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - INDIFERENTE</schema:name>
+      <schema:description>Número de mujeres que respondieron indiferentemente (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - NS/NC</schema:name>
+      <schema:description>Número de mujeres que no respondieron o no contestaron (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - VALENCIANO</schema:name>
+      <schema:description>Número de hombres que respondieron en valenciano (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - CASTELLANO</schema:name>
+      <schema:description>Número de hombres que respondieron en castellano (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - INDIFERENTE</schema:name>
+      <schema:description>Número de hombres que respondieron indiferentemente (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - NS/NC</schema:name>
+      <schema:description>Número de hombres que no respondieron o no contestaron (porcentaje)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

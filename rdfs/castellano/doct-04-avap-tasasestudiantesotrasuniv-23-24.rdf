@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMAS DE DOCTORADO</schema:name>
+      <schema:description>Nombre del programa de doctorado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiantes procedentes  de otras universidades</schema:name>
+      <schema:description>Número total de estudiantes procedentes de otras universidades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiantes nuevos</schema:name>
+      <schema:description>Número total de estudiantes nuevos</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiantes procedentes  de otras universidades (%)</schema:name>
+      <schema:description>Porcentaje de estudiantes procedentes de otras universidades respecto al total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Estudiantes procedentes  de otras universidades</schema:name>
+      <schema:description>Número de mujeres estudiantes procedentes de otras universidades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Estudiantes nuevos</schema:name>
+      <schema:description>Número de mujeres estudiantes nuevos</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Estudiantes procedentes  de otras universidades (%)</schema:name>
+      <schema:description>Porcentaje de mujeres estudiantes procedentes de otras universidades respecto al total de mujeres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Estudiantes procedentes  de otras universidades</schema:name>
+      <schema:description>Número de hombres estudiantes procedentes de otras universidades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Estudiantes nuevos</schema:name>
+      <schema:description>Número de hombres estudiantes nuevos</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Estudiantes procedentes  de otras universidades (%)</schema:name>
+      <schema:description>Porcentaje de hombres estudiantes procedentes de otras universidades respecto al total de hombres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>
