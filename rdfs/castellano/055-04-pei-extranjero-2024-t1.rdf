@@ -1,0 +1,34 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal de investigación (I-PI):  NACIONALIDAD</schema:name>
+      <schema:description>Nacionalidad de las personas de investigación</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL</schema:name>
+      <schema:description>Total de personas de investigación</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>INVESTIGADOR/A</schema:name>
+      <schema:description>Número de investigadores</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>COLABORADOR/A JUNIOR</schema:name>
+      <schema:description>Número de colaboradores junior</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>COLABORADOR/A SENIOR</schema:name>
+      <schema:description>Número de colaboradores senior</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PROFESOR/A DISTINGUIDO/A</schema:name>
+      <schema:description>Número de profesores distinguidos</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

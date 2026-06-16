@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal Técnico, de Gestión y de Apoyo a la Investigación (I-PTGAS): ÁREA DE FORMACIÓN (HORAS)</schema:name>
+      <schema:description>ÁREA DE FORMACIÓN (HORAS)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Horas de formación realizadas/impartidas - TOTAL</schema:name>
+      <schema:description>Horas de formación realizadas/impartidas - Total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Horas de formación realizadas/impartidas - MUJERES</schema:name>
+      <schema:description>Horas de formación realizadas/impartidas - Mujeres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Horas de formación realizadas/impartidas - HOMBRES</schema:name>
+      <schema:description>Horas de formación realizadas/impartidas - Hombres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

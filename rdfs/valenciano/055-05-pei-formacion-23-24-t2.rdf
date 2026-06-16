@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal d'investigació  (I-PI): ÀREA DE FORMACIÓ (NOMBRE I-PI)</schema:name>
+      <schema:description>Àrea de formació (nombre d'I-PI)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. I-PI que ha fet/impartit cursos de formació - TOTAL</schema:name>
+      <schema:description>Nombre total d'I-PI que ha fet/impartit cursos de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. I-PI que ha fet/impartit cursos de formació - DONES</schema:name>
+      <schema:description>Nombre d'I-PI dones que ha fet/impartit cursos de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. I-PI que ha fet/impartit cursos de formació - HOMES</schema:name>
+      <schema:description>Nombre d'I-PI homes que ha fet/impartit cursos de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

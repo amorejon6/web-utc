@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>ÀREA DE FORMACIÓ (HORES)</schema:name>
+      <schema:description>Nom de l'àrea de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Hores de formació fetes/impartides - TOTAL</schema:name>
+      <schema:description>Total d'hores de formació fetes/impartides</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Hores de formació fetes/impartides - DONES</schema:name>
+      <schema:description>Hores de formació fetes/impartides per dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Hores de formació fetes/impartides - HOMES</schema:name>
+      <schema:description>Hores de formació fetes/impartides per homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

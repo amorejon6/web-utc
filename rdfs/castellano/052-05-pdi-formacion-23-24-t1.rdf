@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>ÁREA DE FORMACIÓN (HORAS)</schema:name>
+      <schema:description>Área de formación que indica el tipo de formación impartida</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Horas de formación realizadas/impartidas - TOTAL</schema:name>
+      <schema:description>Total de horas de formación realizadas en cada área</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Horas de formación realizadas/impartidas - MUJERES</schema:name>
+      <schema:description>Horas de formación realizadas en cada área destinadas a mujeres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Horas de formación realizadas/impartidas - HOMBRES</schema:name>
+      <schema:description>Horas de formación realizadas en cada área destinadas a hombres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

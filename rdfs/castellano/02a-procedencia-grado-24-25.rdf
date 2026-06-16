@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>GRADOS</schema:name>
+      <schema:description>Nombre del grau o doble grau ofertat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Matrícula total</schema:name>
+      <schema:description>Nombre total d'estudiants matriculats en el grau</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>%  Residencia fuera de la Comunidad Valenciana</schema:name>
+      <schema:description>Percentatge d'estudiants amb residència fora de la Comunitat Valenciana</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>%  Nacionalidad no española</schema:name>
+      <schema:description>Percentatge d'estudiants amb nacionalitat no espanyola</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

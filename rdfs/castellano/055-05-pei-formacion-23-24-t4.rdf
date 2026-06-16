@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal Técnico, de Gestión y de Apoyo a la Investigación (I-PTGAS): ÁREA DE FORMACIÓN (NÚMERO I-PTGAS)</schema:name>
+      <schema:description>Área de formación (nombre del tipo de formación)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Núm. I-PTGAS que ha realizado/impartido cursos de formación - TOTAL</schema:name>
+      <schema:description>Número total de I-PTGAS que han realizado o impartido cursos de formación en el área</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Núm. I-PTGAS que ha realizado/impartido cursos de formación - MUJERES</schema:name>
+      <schema:description>Número de I-PTGAS mujeres que han realizado o impartido cursos de formación en el área</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Núm. I-PTGAS que ha realizado/impartido cursos de formación - HOMBRES</schema:name>
+      <schema:description>Número de I-PTGAS hombres que han realizado o impartido cursos de formación en el área</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

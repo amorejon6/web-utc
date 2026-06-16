@@ -1,0 +1,59 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>MÁSTERES</schema:name>
+      <schema:description>Nombre del máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Curso de ingreso</schema:name>
+      <schema:description>Año de ingreso de los alumnos</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Alumnos iniciales</schema:name>
+      <schema:description>Número total de alumnos que iniciaron el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Titulados en tiempo previsto en plan de estudios (d)  o en (d+1)</schema:name>
+      <schema:description>Número total de titulados en el tiempo previsto o en el año siguiente</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tasa de graduación (%)</schema:name>
+      <schema:description>Tasa de graduación en porcentaje</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Alumnos iniciales</schema:name>
+      <schema:description>Número de mujeres que iniciaron el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Titulados en tiempo previsto en plan de estudios (d)  o en (d+1)</schema:name>
+      <schema:description>Número de mujeres tituladas en el tiempo previsto o en el año siguiente</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tasa de graduación (%)</schema:name>
+      <schema:description>Tasa de graduación de mujeres en porcentaje</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Alumnos iniciales</schema:name>
+      <schema:description>Número de hombres que iniciaron el máster</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Titulados en tiempo previsto en plan de estudios (d)  o en (d+1)</schema:name>
+      <schema:description>Número de hombres titulados en el tiempo previsto o en el año siguiente</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tasa de graduación (%)</schema:name>
+      <schema:description>Tasa de graduación de hombres en porcentaje</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

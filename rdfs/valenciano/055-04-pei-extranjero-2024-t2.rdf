@@ -1,0 +1,34 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal Técnic, de Gestió i de Suport a la Investigació (I-PTGAS):  NACIONALIDAD</schema:name>
+      <schema:description>Nacionalitat del personal</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL</schema:name>
+      <schema:description>Total del personal</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ESPECIALISTA TÈCNIC/A</schema:name>
+      <schema:description>Nombre d'experts tècnics</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TÈCNIC/A</schema:name>
+      <schema:description>Nombre de tècnics</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TÈCNIC/A SUPERIOR</schema:name>
+      <schema:description>Nombre de tècnics superiors</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TECNÒLEG/A SUPERIOR</schema:name>
+      <schema:description>Nombre de tècnics superiors (tecnòlegs)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMAS DE DOCTORADO</schema:name>
+      <schema:description>Nombre del programa de doctorado</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiantes en régimen de cotutela intern.</schema:name>
+      <schema:description>Total de estudiantes en régimen de cotutela internacionales</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiantes matriculados</schema:name>
+      <schema:description>Total de estudiantes matriculados</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiantes en régimen de cotutela intern. (%)</schema:name>
+      <schema:description>Porcentaje de estudiantes en régimen de cotutela internacionales respecto al total</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Estudiantes en régimen de cotutela intern.</schema:name>
+      <schema:description>Número de mujeres en régimen de cotutela internacionales</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Estudiantes matriculados</schema:name>
+      <schema:description>Total de mujeres matriculadas</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Estudiantes en régimen de cotutela intern. (%)</schema:name>
+      <schema:description>Porcentaje de mujeres en régimen de cotutela internacionales respecto al total de mujeres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Estudiantes en régimen de cotutela intern.</schema:name>
+      <schema:description>Número de hombres en régimen de cotutela internacionales</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Estudiantes matriculados</schema:name>
+      <schema:description>Total de hombres matriculados</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Estudiantes en régimen de cotutela intern. (%)</schema:name>
+      <schema:description>Porcentaje de hombres en régimen de cotutela internacionales respecto al total de hombres</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

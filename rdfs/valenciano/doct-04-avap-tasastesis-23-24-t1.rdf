@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMES DE DOCTORAT - TESIS AMB LA QUALIFICACIÓ CUM LAUDE</schema:name>
+      <schema:description>Nom del programa de doctorat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis amb la qualificació cum laude</schema:name>
+      <schema:description>Total de tesis amb qualificació cum laude</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis defensades</schema:name>
+      <schema:description>Total de tesis defensades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis amb la qualificació cum laude (%)</schema:name>
+      <schema:description>Percentatge de tesis amb qualificació cum laude</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Tesis amb la qualificació cum laude</schema:name>
+      <schema:description>Total de dones amb tesis amb qualificació cum laude</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Tesis defensades</schema:name>
+      <schema:description>Total de dones amb tesis defensades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Tesis amb la qualificació cum laude (%)</schema:name>
+      <schema:description>Percentatge de dones amb tesis amb qualificació cum laude</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Tesis amb la qualificació cum laude</schema:name>
+      <schema:description>Total d'homes amb tesis amb qualificació cum laude</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Tesis defensades</schema:name>
+      <schema:description>Total d'homes amb tesis defensades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Tesis amb la qualificació cum laude (%)</schema:name>
+      <schema:description>Percentatge d'homes amb tesis amb qualificació cum laude</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

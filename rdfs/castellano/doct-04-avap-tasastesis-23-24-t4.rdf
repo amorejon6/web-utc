@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMAS DE DOCTORADO - DOCTORES/AS CON MENCIÓN INDUSTRIAL</schema:name>
+      <schema:description>Nombre del programa de doctorado con mención industrial</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Doctores/as con mención industrial</schema:name>
+      <schema:description>Número total de doctores/as con mención industrial en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis defendidas</schema:name>
+      <schema:description>Número total de tesis defendidas en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Doctores/as con mención industrial (%)</schema:name>
+      <schema:description>Porcentaje de doctores/as con mención industrial en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Doctores/as con mención industrial</schema:name>
+      <schema:description>Número de mujeres doctores/as con mención industrial en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tesis defendidas</schema:name>
+      <schema:description>Número de tesis defendidas por mujeres en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Doctores/as con mención industrial (%)</schema:name>
+      <schema:description>Porcentaje de mujeres doctores/as con mención industrial en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Doctores/as con mención industrial</schema:name>
+      <schema:description>Número de hombres doctores/as con mención industrial en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tesis defendidas</schema:name>
+      <schema:description>Número de tesis defendidas por hombres en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Doctores/as con mención industrial (%)</schema:name>
+      <schema:description>Porcentaje de hombres doctores/as con mención industrial en el programa</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

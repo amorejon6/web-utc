@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMES DE DOCTORAT</schema:name>
+      <schema:description>Nom del programa de doctorat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiants procedents d'altres universitats</schema:name>
+      <schema:description>Total d'estudiants procedents d'altres universitats</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiants nous</schema:name>
+      <schema:description>Total d'estudiants nous</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Estudiants procedents d'altres universitats %</schema:name>
+      <schema:description>Percentatge d'estudiants procedents d'altres universitats entre el total de nous</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Estudiants procedents d'altres universitats</schema:name>
+      <schema:description>Total d'estudiants dones procedents d'altres universitats</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Estudiants nous</schema:name>
+      <schema:description>Total d'estudiants dones nous</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Estudiants procedents d'altres universitats %</schema:name>
+      <schema:description>Percentatge d'estudiants dones procedents d'altres universitats entre el total de dones nous</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Estudiants procedents d'altres universitats</schema:name>
+      <schema:description>Total d'estudiants homes procedents d'altres universitats</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Estudiants nous</schema:name>
+      <schema:description>Total d'estudiants homes nous</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Estudiants procedents d'altres universitats %</schema:name>
+      <schema:description>Percentatge d'estudiants homes procedents d'altres universitats entre el total de homes nous</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>GRADOS</schema:name>
+      <schema:description>Nombre del grado o programa académico</schema:description>
+      <schema:valueType rdf:resource="schema:String"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Alumnos nuevos  (n-2)</schema:name>
+      <schema:description>Número total de alumnos nuevos en el grado el año anterior</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nuevos que abandonan (n y n-1)</schema:name>
+      <schema:description>Número total de nuevos estudiantes que abandonaron en los dos años anteriores</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tasa Abandono (%)</schema:name>
+      <schema:description>Tasa de abandono de nuevos estudiantes expresada en porcentaje</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Alumnos nuevos  (n-2)</schema:name>
+      <schema:description>Número total de mujeres nuevas en el grado el año anterior</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Nuevos que abandonan (n y n-1)</schema:name>
+      <schema:description>Número total de mujeres nuevas que abandonaron en los dos años anteriores</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>MUJERES - Tasa Abandono (%)</schema:name>
+      <schema:description>Tasa de abandono de mujeres nuevas expresada en porcentaje</schema:description>
+      <schema:valueType rdf:resource="schema:String"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Alumnos nuevos  (n-2)</schema:name>
+      <schema:description>Número total de hombres nuevos en el grado el año anterior</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Nuevos que abandonan (n y n-1)</schema:name>
+      <schema:description>Número total de hombres nuevos que abandonaron en los dos años anteriores</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMBRES - Tasa Abandono (%)</schema:name>
+      <schema:description>Tasa de abandono de hombres nuevos expresada en porcentaje</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

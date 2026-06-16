@@ -7,17 +7,17 @@
     </schema:PropertyValue>
     <schema:PropertyValue>
       <schema:name>Total</schema:name>
-      <schema:description>Total de persones de cada país</schema:description>
+      <schema:description>Total de persones registrades per nacionalitat</schema:description>
       <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </schema:PropertyValue>
     <schema:PropertyValue>
       <schema:name>Dones</schema:name>
-      <schema:description>Nombre de dones registrades</schema:description>
+      <schema:description>Nombre de dones registrades per nacionalitat</schema:description>
       <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </schema:PropertyValue>
     <schema:PropertyValue>
       <schema:name>Homes</schema:name>
-      <schema:description>Nombre d'homes registrats</schema:description>
+      <schema:description>Nombre d'homes registrats per nacionalitat</schema:description>
       <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </schema:PropertyValue>
   </schema:variableMeasured>

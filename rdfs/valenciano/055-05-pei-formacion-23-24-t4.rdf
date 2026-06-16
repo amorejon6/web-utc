@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal Tècnic, de Gestió i de Suport a la Investigació (I-PTGAS): ÀREA DE FORMACIÓ (NOMBRE I-PTGAS)</schema:name>
+      <schema:description>Àrea de formació (nom de l'àrea)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. I-PTGAS que ha fet/impartit cursos de formació - TOTAL</schema:name>
+      <schema:description>Nombre total d'I-PTGAS que han fet/impartit cursos de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. I-PTGAS que ha fet/impartit cursos de formació - DONES</schema:name>
+      <schema:description>Nombre d'I-PTGAS dones que han fet/impartit cursos de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. I-PTGAS que ha fet/impartit cursos de formació - HOMES</schema:name>
+      <schema:description>Nombre d'I-PTGAS homes que han fet/impartit cursos de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

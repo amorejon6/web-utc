@@ -1,0 +1,34 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal Técnico, de Gestión y de Apoyo a la Investigación (I-PTGAS):  NACIONALIDAD</schema:name>
+      <schema:description>Nacionalidad de los profesionales técnicos</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL</schema:name>
+      <schema:description>Total de profesionales técnicos por nacionalidad</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ESPECIALISTA TÉCNICO/A</schema:name>
+      <schema:description>Número de especialistas técnicos por nacionalidad</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TÉCNICO/A</schema:name>
+      <schema:description>Número de técnicos por nacionalidad</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TÉCNICO/A SUPERIOR</schema:name>
+      <schema:description>Número de técnicos superiores por nacionalidad</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TECNÓLOGO/A SUPERIOR</schema:name>
+      <schema:description>Número de técnicos superiores en tecnología por nacionalidad</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

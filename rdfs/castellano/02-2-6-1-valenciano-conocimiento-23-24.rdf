@@ -1,0 +1,69 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>NIVEL DE CONOCIMIENTO</schema:name>
+      <schema:description>Nivel de conocimiento de la persona</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ENTENDIDO - TOTAL</schema:name>
+      <schema:description>Total de personas que entendieron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ENTENDIDO - MUJERES</schema:name>
+      <schema:description>Número de mujeres que entendieron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ENTENDIDO - HOMBRES</schema:name>
+      <schema:description>Número de hombres que entendieron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ESCRITO - TOTAL</schema:name>
+      <schema:description>Total de personas que escribieron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ESCRITO - MUJERES</schema:name>
+      <schema:description>Número de mujeres que escribieron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ESCRITO - HOMBRES</schema:name>
+      <schema:description>Número de hombres que escribieron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HABLADO - TOTAL</schema:name>
+      <schema:description>Total de personas que hablaron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HABLADO - MUJERES</schema:name>
+      <schema:description>Número de mujeres que hablaron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HABLADO - HOMBRES</schema:name>
+      <schema:description>Número de hombres que hablaron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>LEÍDO - TOTAL</schema:name>
+      <schema:description>Total de personas que leyeron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>LEÍDO - MUJERES</schema:name>
+      <schema:description>Número de mujeres que leyeron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>LEÍDO - HOMBRES</schema:name>
+      <schema:description>Número de hombres que leyeron el contenido</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

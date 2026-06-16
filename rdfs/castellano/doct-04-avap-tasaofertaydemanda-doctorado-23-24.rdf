@@ -17,7 +17,7 @@
     </schema:PropertyValue>
     <schema:PropertyValue>
       <schema:name>Tasa de oferta y demanda (%)</schema:name>
-      <schema:description>Ratio entre el número de plazas ofertadas y demandadas, expresado como porcentaje</schema:description>
+      <schema:description>Ratio porcentual de oferta y demanda de plazas</schema:description>
       <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </schema:PropertyValue>
   </schema:variableMeasured>

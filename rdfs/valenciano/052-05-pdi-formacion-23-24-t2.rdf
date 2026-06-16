@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>ÀREA DE FORMACIÓ (NOMBRE PDI)</schema:name>
+      <schema:description>Àrea de formació (nombre de PDI)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. PDI que ha fet/impartit cursos de formació - TOTAL</schema:name>
+      <schema:description>Nombre total de PDI que han fet/impartit cursos de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. PDI que ha fet/impartit cursos de formació - DONES</schema:name>
+      <schema:description>Nombre de PDI dones que han fet/impartit cursos de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Nre. PDI que ha fet/impartit cursos de formació - HOMES</schema:name>
+      <schema:description>Nombre de PDI homes que han fet/impartit cursos de formació</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

@@ -1,0 +1,24 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>ÁREA DE FORMACIÓN (NÚMERO PDI)</schema:name>
+      <schema:description>Área de formación (categoría de programas de formación)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Núm. PDI que ha realizado/impartido cursos de formación - TOTAL</schema:name>
+      <schema:description>Número total de PDI que han realizado cursos de formación</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Núm. PDI que ha realizado/impartido cursos de formación - MUJERES</schema:name>
+      <schema:description>Número de PDI mujeres que han realizado cursos de formación</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Núm. PDI que ha realizado/impartido cursos de formación - HOMBRES</schema:name>
+      <schema:description>Número de PDI hombres que han realizado cursos de formación</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

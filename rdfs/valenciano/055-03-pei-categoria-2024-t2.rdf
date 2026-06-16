@@ -1,0 +1,39 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>Personal Técnic, de Gestió i de Suport a la Investigació (I-PTGAS)</schema:name>
+      <schema:description>Tipus de personal tècnic, de gestió i de suport a la investigació (I-PTGAS)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total - Nre.</schema:name>
+      <schema:description>Nombre total de persones per tipus de personal tècnic, de gestió i de suport a la investigació (I-PTGAS)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Total - %</schema:name>
+      <schema:description>Percentatge total de persones per tipus de personal tècnic, de gestió i de suport a la investigació (I-PTGAS)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Dones - Nre.</schema:name>
+      <schema:description>Nombre de dones per tipus de personal tècnic, de gestió i de suport a la investigació (I-PTGAS)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Dones - %</schema:name>
+      <schema:description>Percentatge de dones per tipus de personal tècnic, de gestió i de suport a la investigació (I-PTGAS)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Homes - Nre.</schema:name>
+      <schema:description>Nombre d'homes per tipus de personal tècnic, de gestió i de suport a la investigació (I-PTGAS)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>Homes - %</schema:name>
+      <schema:description>Percentatge d'homes per tipus de personal tècnic, de gestió i de suport a la investigació (I-PTGAS)</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

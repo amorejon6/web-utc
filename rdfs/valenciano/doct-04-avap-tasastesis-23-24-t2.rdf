@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>PROGRAMES DE DOCTORAT- DOCTORS/ES AMB ESMENT INTERNACIONAL</schema:name>
+      <schema:description>Nom del programa de doctorat</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Doctors/es amb esment internacional</schema:name>
+      <schema:description>Nombre total de doctors/es amb esment internacional</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Tesis defensades</schema:name>
+      <schema:description>Nombre total de tesis defensades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Doctors/es amb esment internacional (%)</schema:name>
+      <schema:description>Percentatge de doctors/es amb esment internacional respecte al total de tesis defensades</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Doctors/es amb esment internacional</schema:name>
+      <schema:description>Nombre de dones amb esment internacional</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Tesis defensades</schema:name>
+      <schema:description>Nombre de tesis defensades per dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Doctors/es amb esment internacional (%)</schema:name>
+      <schema:description>Percentatge de dones amb esment internacional respecte al total de tesis defensades per dones</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Doctors/es amb esment internacional</schema:name>
+      <schema:description>Nombre d'homes amb esment internacional</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Tesis defensades</schema:name>
+      <schema:description>Nombre de tesis defensades per homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Doctors/es amb esment internacional (%)</schema:name>
+      <schema:description>Percentatge d'homes amb esment internacional respecte al total de tesis defensades per homes</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

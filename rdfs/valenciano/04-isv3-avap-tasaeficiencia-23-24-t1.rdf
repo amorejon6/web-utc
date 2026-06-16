@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>GRAUS</schema:name>
+      <schema:description>Nom del grau acadèmic</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Crèdits totals requerits per a titulació</schema:name>
+      <schema:description>Crèdits totals requerits per a titulació</schema:description>
+      <schema:valueType rdf:resource="xsd:double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Crèdits matriculats egressats</schema:name>
+      <schema:description>Crèdits matriculats egressats</schema:description>
+      <schema:valueType rdf:resource="xsd:double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Taxa d'eficiència</schema:name>
+      <schema:description>Taxa d'eficiència</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Crèdits totals requerits per a titulació</schema:name>
+      <schema:description>Crèdits totals requerits per a titulació per dones</schema:description>
+      <schema:valueType rdf:resource="xsd:double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Crèdits matriculats egressats</schema:name>
+      <schema:description>Crèdits matriculats egressats per dones</schema:description>
+      <schema:valueType rdf:resource="xsd:double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Taxa d'eficiència</schema:name>
+      <schema:description>Taxa d'eficiència per dones</schema:description>
+      <schema:valueType rdf:resource="xsd:integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Crèdits totals requerits per a titulació</schema:name>
+      <schema:description>Crèdits totals requerits per a titulació per homes</schema:description>
+      <schema:valueType rdf:resource="xsd:double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Crèdits matriculats egressats</schema:name>
+      <schema:description>Crèdits matriculats egressats per homes</schema:description>
+      <schema:valueType rdf:resource="xsd:double"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Taxa d'eficiència</schema:name>
+      <schema:description>Taxa d'eficiència per homes</schema:description>
+      <schema:valueType rdf:resource="xsd:string"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

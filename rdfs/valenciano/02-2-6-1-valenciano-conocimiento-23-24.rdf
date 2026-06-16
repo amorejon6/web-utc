@@ -1,0 +1,69 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>NIVELL DE CONEIXEMENT</schema:name>
+      <schema:description>Nivell de coneixement de la població</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ENTÈS - TOTAL</schema:name>
+      <schema:description>Total d'entès en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ENTÈS - DONES</schema:name>
+      <schema:description>Total d'entès dones en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ENTÈS - HOMES</schema:name>
+      <schema:description>Total d'entès homes en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ESCRIT - TOTAL</schema:name>
+      <schema:description>Total d'escrit en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ESCRIT - DONES</schema:name>
+      <schema:description>Total d'escrit dones en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>ESCRIT - HOMES</schema:name>
+      <schema:description>Total d'escrit homes en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PARLAT - TOTAL</schema:name>
+      <schema:description>Total de parlat en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PARLAT - DONES</schema:name>
+      <schema:description>Total de parlat dones en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>PARLAT - HOMES</schema:name>
+      <schema:description>Total de parlat homes en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>LLEGIT - TOTAL</schema:name>
+      <schema:description>Total de llegit en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>LLEGIT - DONES</schema:name>
+      <schema:description>Total de llegit dones en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>LLEGIT - HOMES</schema:name>
+      <schema:description>Total de llegit homes en el nivell de coneixement</schema:description>
+      <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>

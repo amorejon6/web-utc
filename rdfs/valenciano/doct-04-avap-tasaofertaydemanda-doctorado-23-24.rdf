@@ -7,17 +7,17 @@
     </schema:PropertyValue>
     <schema:PropertyValue>
       <schema:name>Nre. Places demanades</schema:name>
-      <schema:description>Nombre de places demanades per al programa de doctorat</schema:description>
+      <schema:description>Nombre de places demandades per al programa</schema:description>
       <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </schema:PropertyValue>
     <schema:PropertyValue>
       <schema:name>Nre. Places oferides</schema:name>
-      <schema:description>Nombre de places oferides per al programa de doctorat</schema:description>
+      <schema:description>Nombre de places oferides per al programa</schema:description>
       <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </schema:PropertyValue>
     <schema:PropertyValue>
       <schema:name>Taxa d'oferta i demanda (%)</schema:name>
-      <schema:description>Percentatge de taxa d'oferta i demanda del programa de doctorat</schema:description>
+      <schema:description>Percentatge de taxa d'oferta i demanda del programa</schema:description>
       <schema:valueType rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </schema:PropertyValue>
   </schema:variableMeasured>

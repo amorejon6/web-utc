@@ -1,0 +1,54 @@
+<dcat:Distribution>
+  <schema:variableMeasured>
+    <schema:PropertyValue>
+      <schema:name>GRAUS</schema:name>
+      <schema:description>Nom de la grau o programa acadèmic</schema:description>
+      <schema:valueType rdf:resource="schema:String"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nre. PDI doctor</schema:name>
+      <schema:description>Nombre total de professionals mèdics doctorants en la grau</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Nre. PDI</schema:name>
+      <schema:description>Nombre total de professionals mèdics en la grau</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>TOTAL - Taxa de PDI doctor (%)</schema:name>
+      <schema:description>Percentatge de professionals mèdics doctorants en la grau respecte al total de professionals mèdics</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Nre. PDI doctor</schema:name>
+      <schema:description>Nombre total de dones professionals mèdics doctorants en la grau</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Nre. PDI</schema:name>
+      <schema:description>Nombre total de dones professionals mèdics en la grau</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>DONES - Taxa de PDI doctor (%)</schema:name>
+      <schema:description>Percentatge de dones professionals mèdics doctorants en la grau respecte al total de dones professionals mèdics</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Nre. PDI doctor</schema:name>
+      <schema:description>Nombre total d'homes professionals mèdics doctorants en la grau</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Nre. PDI</schema:name>
+      <schema:description>Nombre total d'homes professionals mèdics en la grau</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+    <schema:PropertyValue>
+      <schema:name>HOMES - Taxa de PDI doctor (%)</schema:name>
+      <schema:description>Percentatge d'homes professionals mèdics doctorants en la grau respecte al total d'homes professionals mèdics</schema:description>
+      <schema:valueType rdf:resource="schema:Integer"/>
+    </schema:PropertyValue>
+  </schema:variableMeasured>
+</dcat:Distribution>
